@@ -35,6 +35,7 @@ jobs:
 
             - run: ./run-tests.sh
 
+
 workflows:
     version: 2.1
     workflow:
@@ -42,4 +43,4 @@ workflows:
             - build:
                 matrix:
                     parameters:
-                        java: ["openjdk-11", "openjdk-15"]
+                        java: ["openjdk-15-buster"]
